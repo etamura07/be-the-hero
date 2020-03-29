@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
+
+
+// Quando o HTML está escrito dentro de um arquivo javascript, é chamado de JSX(JavaScript XML)
+
+// Um componente no react é uma função que retorna html, ela pode ter funcionalidades javascript
+
+// Propriedades no react tem a mesma sintaxe de atributos, porém são atributos repassados para componentes ao invés de elementos no html
+
+// O estado, toda vez que for alterado o componente será remontado!
+// Não se pode alterar o valor do estado de uma maneira direta
+// o UseState retorna um Array[valor, funçãoDeAtualização], com essa função de atualização retornada pelo array conseguimos setar o valor
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Omnistack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
